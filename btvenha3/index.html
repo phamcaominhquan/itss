@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FastFingers Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top-bar">
+    <div class="logo">FastFingers</div>
+    <div class="subtitle">Improve your Typing Speed</div>
+    <div class="language-select">
+      Language: <select><option>English</option></select>
+    </div>
+    <nav class="top-menu">
+      <a href="#">Forum</a>
+      <a href="#">FAQ</a>
+      <a href="#">Supporter</a>
+      <a href="#">Login/Create Account</a>
+    </nav>
+  </header>
+
+  <div class="main-layout">
+    <aside class="sidebar">
+      <ul>
+        <li>Typing Test</li>
+        <li>Typing Test (advanced)</li>
+        <li>Custom Typing Test</li>
+        <li>Multiplayer Typing Test</li>
+        <li>Typing Competition</li>
+        <li>Text Practice</li>
+        <li>Top 1000</li>
+      </ul>
+    </aside>
+
+    <main class="content">
+      <div class="word-display" id="word-display"></div>
+      <div class="input-area">
+        <input type="text" id="word-input" placeholder="Type here..." autofocus>
+        <div class="timer-refresh">
+          <span id="timer">60</span>
+          <button id="restart-btn">↻</button>
+        </div>
+      </div>
+      <div class="info">
+        <span id="wpm">WPM: 0</span>
+      </div>
+      <div class="result-box" id="result-box" style="display:none;">
+        <h2>Result</h2>
+        <p id="result-wpm">0 WPM</p>
+        <p id="result-keystrokes">Keystrokes: 0</p>
+        <p id="result-accuracy">Accuracy: 0%</p>
+        <p id="result-correct">Correct words: 0</p>
+        <p id="result-wrong">Wrong words: 0</p>
+        <button id="play-again">Play Again</button>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
